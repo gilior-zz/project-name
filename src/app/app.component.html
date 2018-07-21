@@ -16,5 +16,12 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
+
+  <li *ngFor="let data of data$|async">
+    <h6>{{data.id}}</h6>
+    <h2>{{data.date}}</h2>
+  </li>
 </ul>
+
+
 
